@@ -1,0 +1,54 @@
+$black: #00001e;
+
+.nav-container {
+  background: $black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+
+}
+
+nav {
+  background: $black;
+  position: relative;
+  width: 1200px;
+  margin: auto;
+
+  ul {
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin: 0;
+    a {
+      text-decoration: none !important;
+    }
+
+    li {
+      display: inline;
+      padding-right: 20px;
+      color: white;
+      }
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 153px;
+
+    margin: 5px;
+    margin-right: 35px;
+  }
+}
+
+.index-projects {
+  nav {
+    svg {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+@import 'navbar';
+
+.study {
+    overflow: hidden;
+    height: 250px;
+    position: relative;
+    background: #00001e;
+}
+
+.study > .background {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 4;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  -moz-transform: scale(1,1);
+  -webkit-transform: scale(1,1);
+  transform: scale(1,1);
+  -moz-background-size: cover !important;
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  background-position: center center !important;
+}
+
+.study:hover > .background {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+}
+
+.main-container {
+  margin-bottom: 50px;
+}
+
+.study footer {
+  z-index: 9;
+}

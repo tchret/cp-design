@@ -1,0 +1,21 @@
+ <% clients = ['u', 'leclerc', 'gifi', 'botanic', 'comptoir', 'monoprix', 'pharmavie', 'banque_postale', 'uno', 'carrefour', 'oxxo', 'total', 'meyson', 'cash', 'multifood', 'snoke'] %>
+
+<div class='container clients'>
+
+  <% clients.each do |client| %>
+    <div class="col-sm-4 client-container">
+      <div class="card"> <%= render "shared/client/#{client}" %></div>
+    </div>
+  <% end %>
+    <div class="col-sm-4">
+      <div class="card">
+        <%= image_tag 'luminarc.png' %>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="card">
+        <%= image_tag 'rexel.png' %>
+      </div>
+    </div>
+</div>

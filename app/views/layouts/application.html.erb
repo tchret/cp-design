@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CpDesign</title>
+  <%= stylesheet_link_tag    'application', media: 'all' %>
+  <%= csrf_meta_tags %>
+  <link rel='icon' href='<%= image_path 'cp_favico.png' %>'>
+</head>
+<body class='<%= params[:action] %>-<%= params[:controller] %>'>
+<%= render 'shared/navbar' %>
+<%= yield %>
+
+<footer id='footer'>
+  <div class="container">
+    <a href="/contact">
+      <div class="col-sm-6 col-xs-12">
+        <h1>
+          Contact
+        </h1>
+
+        <ul class='infos'>
+          <li>CP DESIGN</li>
+          <li>28, allée de la ferme</li>
+          <li>92170 Vanves</li>
+          <li>Map</li>
+        </ul>
+
+        <ul class='little-infos'>
+          <li>Téléphone +33 (0) 1 41 09 96 93</li>
+          <li>Fax +33 (0) 1 41 09 96 94</li>
+        </ul>
+      </div>
+    </a>
+    <div class="col-sm-6 col-xs-12">
+      <div class="pull-right">
+        <ul class='guys'>
+          <a href="mailto:c.protat@cp-design.com">
+            <li>
+              <h3>Christophe Protat</h3>
+              <p>c.protat@cp-design.com</p>
+            </li>
+          </a>
+          <a href="mailto:a.rodriguez@cp-design.com">
+            <li>
+              <h3>Alexandre Rodriguez</h3>
+              <p>a.rodriguez@cp-design.com</p>
+            </li>
+          </a>
+        </ul>
+      </div>
+    </div>
+
+    <div class="oim">
+     Dévelopement web -  <a href="http://twitter.com/tchret" target='_blank'>@tchret</a>
+    </div>
+  </div>
+</footer>
+<%= javascript_include_tag 'application' %>
+<script>
+  window.sr = new scrollReveal();
+</script>
+</body>
+</html>

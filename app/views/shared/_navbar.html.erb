@@ -1,0 +1,40 @@
+<div class='nav-container'>
+  <nav>
+    <ul>
+    <%= link_to root_path do %>
+      <li>
+        Projets
+      </li>
+    <% end %>
+      <a href='/about'>
+        <li>
+          A propos
+        </li>
+      </a>
+      <a href="/contact">
+        <li>
+          Contact
+        </li>
+      </a>
+
+      <a href='/clients'>
+
+        <li>
+          CLIENTS
+        </li>
+      </a>
+
+      <a href="http://www.nouveaux-concepts.com" target="_blank">
+        <li>
+          BLOG
+        </li>
+      </a>
+
+
+
+    </ul>
+    <%= link_to root_path do %>
+      <%= render 'shared/partials/logo' %>
+    <% end %>
+  </nav>
+</div>

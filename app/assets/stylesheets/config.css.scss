@@ -1,0 +1,9 @@
+$black: black;
+
+@font-face {
+ font-family: "DIN";
+ src: asset-url('fonts/DIN/din-webfont.eot');
+ src: asset-url('fonts/DIN/din-webfont.eot?#iefix') format('embedded-opentype'),
+      asset-url('fonts/DIN/din-webfont.woff') format('woff'),
+      asset-url('fonts/DIN/din-webfont.ttf') format('truetype')
+}

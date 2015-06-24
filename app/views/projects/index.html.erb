@@ -1,0 +1,31 @@
+<div class='container main-container'>
+  <div class="big-logo">
+    <%= render 'shared/partials/logo' %>
+  </div>
+  <header class='home' style='background: url(<%= Metum.last.site_banner %>);background-size: cover; background-position: center center; '>
+    <h1><%= Metum.last.slogan %></h1>
+  </header>
+
+  <h1 class='title-projects'>Projets</h1>
+    <% @projects.each do |project|  %>
+      <%= link_to project_path(project) do %>
+        <div class='col-sm-3'>
+          <div class='study' >
+            <div class="sk-spinner sk-spinner-wordpress">
+             <span class="sk-inner-circle"></span>
+            </div>
+
+          <div class='background lazy' data-original="<%= project.banner%>"  style='background:url(<%= image_path 'grey.gif'%>)'></div>
+            <footer>
+              <h2>
+                <%= project.title %>
+              </h2>
+              <p> <%= project.country %> <%= project.city %></p>
+            </footer>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+</div>
+
+

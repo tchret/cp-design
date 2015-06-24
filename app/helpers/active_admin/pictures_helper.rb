@@ -1,0 +1,2 @@
+module ActiveAdmin::PicturesHelper
+end

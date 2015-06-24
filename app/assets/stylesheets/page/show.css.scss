@@ -1,0 +1,156 @@
+.banner {
+  height: 400px;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+.images_bottom {
+  img {
+    width: 100%;
+  }
+}
+
+.slideshow_pictures {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+
+.infos{
+  padding: 10px;
+  border: 1px solid #e8e8e8;
+  div {
+    display: inline;
+    color: #bababa;
+  }
+  .country {
+    border-right: 1px solid #e8e8e8;
+    padding-right: 10px;
+  }
+
+  .description {
+    padding-left: 10px;
+  }
+}
+
+#owl-demo .item img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.content  {
+  font-size: 20px;
+  line-height: 1.5;
+
+
+  h1 {
+    font-size: 80px;
+    margin-bottom: 40px;
+  }
+
+}
+
+.nav-project {
+  position: fixed;
+  right: 0;
+  top: 58px;
+  background: rgb(0, 0, 30);
+  color: white;
+  z-index: 9;
+  .menu:hover ~ .menu-index{
+      display: block ;
+  }
+
+
+  .menu:hover {
+    opacity: 0;
+  }
+
+
+  .menu-index:hover {
+    display:block;
+  }
+
+  .menu-index:hover ~ .menu-index {
+    opacity: 0;
+  }
+}
+
+
+.nav-project {
+
+  .menu-index {
+    padding: 20px;
+    a {
+      color: white;
+      text-decoration: none;
+    }
+
+    li:hover {
+      color: #d1d1d1;
+    }
+
+  }
+  .menu {
+    position: absolute;
+    right: 0;
+    /* bottom: -12px; */
+    height: 25px;
+    width: 33px;
+    z-index: 20;
+    /* padding: 24px; */
+    text-align: center;
+    font-size: 18px;
+    top: 53px;
+    background: rgb(0, 0, 30);
+  }
+
+  .menu-index:hover {
+    display:block;
+  }
+
+  ul {
+    display:none;
+    // height: 0;
+    width: 200px;
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+    }
+  }
+
+
+
+  div {
+    display: inline-block;
+
+    &.title {
+      padding: 17px;
+    }
+
+
+
+    &.prev, &.next {
+      width: 30px;
+      height: 30px;
+      font-size: 20px;
+
+      a {
+        color: white;
+
+      }
+    }
+  }
+}
+
+.images_bottom {
+  margin-top: 70px;
+  div {
+    height: 400px;
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+}

@@ -1,0 +1,49 @@
+header {
+  &.home {
+    position: relative;
+    height: 400Px;
+    margin-top: 50px;
+    color: white;
+    background-size: cover;
+    background-position: center center;
+    background-image: url('https://s3.amazonaws.com/StartupStockPhotos/20140808_StartupStockPhotos/55.jpg');
+
+    &:after {
+      background: #00001e;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: " ";
+      z-index: -1;
+    }
+
+    h1 {
+      color: white;
+      padding-top: 190px;
+      text-align: center;
+    }
+  }
+}
+
+.title-projects {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.big-logo {
+  text-align: center;
+  margin-top: 85px;
+
+  svg {
+  width: 500px;
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
+}
+  path,rect,circle {
+    fill: #00001e;
+  }
+}

@@ -1,0 +1,50 @@
+.study{
+  &:hover {
+    footer {
+      height: 75px;
+    }
+
+    p {
+      opacity: 1;
+    }
+  }
+  footer {
+    background: #00001e;
+    transition: 0.3s ease height;
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    padding: 13px;
+
+    p, h1{
+      margin: 0;
+
+      & a{
+      }
+    }
+
+    p {
+      bottom: 20px;
+      color: white;
+      opacity: 0;
+      position: relative;
+      transition: 0.5s ease opacity;
+    }
+
+    h2 {
+      position: relative;
+      bottom: 20px;
+      font-size: 20px;
+      color: white;
+    }
+  }
+}
+
+
+.container-projects a {
+  color: white;
+}
+
+
+

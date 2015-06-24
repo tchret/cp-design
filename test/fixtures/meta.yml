@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  slogan: MyText
+  site_banner: MyString
+  about: MyText
+
+two:
+  slogan: MyText
+  site_banner: MyString
+  about: MyText

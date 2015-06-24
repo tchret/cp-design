@@ -1,0 +1,70 @@
+/*
+ * Manifest
+ *
+ *= require froala_editor.min.css
+ *= require froala_style.min.css
+ *= require font-awesome
+ *
+*/
+
+// ==== ACTIVE ADMIN ====
+
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+// SASS variable overrides must be declared before loading up Active Admin's styles.
+//
+// To view the variables that Active Admin provides, take a look at
+// `app/assets/stylesheets/active_admin/mixins/_variables.css.scss` in the
+// Active Admin source.
+//
+// For example, to change the sidebar width:
+// $sidebar-width: 242px;
+
+
+.banner-container {
+    border: 3px solid #444;
+    text-align: center;
+    background: black;
+    margin-bottom: 20px;
+}
+
+.site-banner {
+    max-width: 100%;
+    max-height: 290px;
+}
+
+.slogan-form {
+    fieldset {
+        margin-bottom: 0;
+    }
+    input[type=text] {
+        margin-bottom: 20px;
+        margin-right: 30px;
+    }
+}
+
+.about-form {
+    fieldset {
+        margin-bottom: 0;
+    }
+    .froala-box {
+        margin-bottom: 20px;
+    }
+}
+
+// Wysiwyg
+.froala-wrapper {
+    background: white;
+}
+
+// Project
+
+form.project {
+    .inline-hints {
+        float: right;
+        img {
+            max-width: 200px;
+        }
+    }
+}

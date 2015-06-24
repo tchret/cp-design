@@ -1,0 +1,66 @@
+footer {
+  background: rgb(0, 0, 30);
+
+  .container {
+    position: relative;
+  }
+
+
+  ul {
+    list-style: none;
+    line-height: 1.5;
+    padding:0;
+
+    &.infos {
+      font-size: 25px;
+      border:none;
+      padding:0;
+      margin:0;
+    }
+
+    li {
+      color: #b8b8b8;
+    }
+
+    &.little-infos {
+      padding-top: 50px;
+      font-size: 22px;
+      li {
+        color: #979797;
+
+      }
+    }
+  }
+
+  h1 {
+    color: white;
+    font-size: 50px;
+  }
+}
+
+.guys {
+  h3 {
+    font-size: 34px;
+    color: white;
+    margin-bottom: 0;
+  }
+  p {
+    font-size: 20px;
+    padding-top: 0;
+  }
+
+
+}
+
+.oim {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 17px;
+  color: rgb(115, 115, 117);
+
+  a {
+    color: rgb(115, 115, 117);
+
+  }
+}
